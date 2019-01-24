@@ -1,0 +1,309 @@
+/*
+
+**************************************  
+    Windows 10 Command Prompt design                                
+    Designed by: Saleh Ibne Omar                  
+    Email: salehibneomar@gamil.com
+    Date: 24 JAN 2019
+
+**************************************    
+
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background: rgba(96, 163, 188,1.0);
+}
+
+.cmd-section{
+    width: 100%;
+    float: left;
+}
+
+.cmd-wrapper{
+    width: 50%;
+    margin: 60px auto 10px auto;
+}
+
+.card{
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.card-header{
+    margin: 0;
+    padding: 0;
+}
+
+.card-header p{
+    display: inline-block;
+    margin: 0;
+    padding: 12px 16px;
+    font-size: 10pt;
+    height: 46px;
+    color: rgb(21, 25, 29);
+}
+
+.c-t{
+    width: 60%;
+    float: left;
+}
+
+.f-btns{
+    width: 8%;
+    float: right;
+    text-align: center;
+}
+
+.c-t:hover{
+    cursor: default;
+}
+
+.cancel:hover{
+    background: rgba(231, 76, 60,1.0);
+    color: white;
+    cursor: default;
+}
+
+.full:hover, .mini:hover{
+    cursor: default;
+    background: rgba(189, 195, 199,1.0);
+}
+
+
+.fa-window-minimize{
+    display: block;
+    margin-top: -1.6px;
+}
+
+.card-body{
+    height: 400px;
+    background: rgb(22, 26, 31);
+}
+
+.task-bar{
+    width: 100%;
+    background: rgba(10, 61, 98, 0.4);
+    border-top: 1px solid rgba(10, 61, 98, 0.4);
+    float: left;
+    overflow: hidden;
+}
+
+.start-btn-con{
+    width: 6%;
+    float: left;
+    overflow: hidden;
+}
+
+.bttn{
+    width: 100%;
+    height: 50px;
+    font-size: 20pt;
+    background: transparent;
+    color: white; 
+    border: 0px;
+    padding: 1px;
+    transition: ease-in-out 0.2s;
+}
+
+.bttn:hover{
+    cursor: default;
+    color: rgba(10, 61, 98, 1.0);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.bttn:focus{
+    outline: none;
+}
+
+.home-clear-con{
+    width: 1.5%;
+    float: right;
+}
+
+.bttn2{
+    width: 100%;
+    height: 50px;
+    border-right: 0;
+    border-left: 1px solid rgba(10, 61, 98, 0.4);
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    background: rgba(10, 61, 98, 0.2);
+    transition: ease-in-out 0.2s;
+}
+
+.bttn2:hover{
+    background: rgba(255, 255, 255, 0.2);
+    cursor: default;
+}
+
+.bttn2:focus{
+    outline: none;
+}
+
+.app-icon-btn-con{
+    width: 6%;
+    float: left;
+    overflow: hidden;
+}
+
+.bttn3{
+    width: 100%;
+    height: 50px;
+    font-size: 20pt;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.8); 
+    border: 0px;
+    padding: 1px;
+    transition: ease-in-out 0.2s;
+}
+
+.bttn3:hover{
+    cursor: default;
+}
+
+.bttn3:focus{
+    outline: none;
+}
+
+.c-line1, .c-line2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+    font-size: 10pt;
+    color: white;
+}
+
+.c-line3{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+    font-size: 10pt;
+    color: white;
+}
+
+.c-line1:hover, .c-line2:hover, .c-line3:hover{
+    cursor: default;
+}
+
+.b-crsr{
+    animation: 0.8s blink infinite;
+}
+
+@keyframes blink{
+
+    0%{
+        color: transparent;
+    }
+    55%{
+        color: white;
+    }
+    100%{
+        color: transparent;
+    }
+    
+}
+
+
+/* Media query */
+
+@media all and (max-width: 1400px){
+    .cmd-wrapper{
+        width: 60%;
+        margin: 40px auto 10px auto;
+    }
+}
+
+@media all and (max-width: 1200px){
+    .cmd-wrapper{
+        width: 70%;
+    }
+
+    .start-btn-con{
+        width: 10%;
+    }
+
+    .app-icon-btn-con{
+        width: 10%;
+    }
+
+    .home-clear-con{
+        width: 2.5%;
+    }
+}
+
+@media all and (max-width: 860px){
+    .cmd-wrapper{
+        width: 80%;
+        margin: 20px auto 8px auto;
+    }
+
+}
+
+@media all and (max-width: 680px){
+    .start-btn-con{
+        width: 14%;
+    }
+
+    .app-icon-btn-con{
+        width: 14%;
+    }
+
+    .home-clear-con{
+        width: 4%;
+    }
+
+    .f-btns{
+        width: 12%;
+    }
+}
+
+@media all and (max-width: 580px){
+    .card-header p{
+        font-size: 9pt;
+    }
+    .c-line1, .c-line2{
+        font-size: 9pt;
+    }
+    
+    .c-line3{
+        font-size: 9pt;
+    }
+    .card-body{
+        height: 260px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .cmd-wrapper{
+        width: 90%;
+    }
+    .card-body{
+        height: 220px;
+    }
+
+    .start-btn-con{
+        width: 20%;
+    }
+
+    .app-icon-btn-con{
+        width: 20%;
+    }
+
+    .home-clear-con{
+        width: 8%;
+    }
+
+    .f-btns{
+        width: 13%;
+    }
+}
